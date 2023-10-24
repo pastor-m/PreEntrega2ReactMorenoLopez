@@ -1,0 +1,12 @@
+.contador{
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.Controles{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 1%;
+}
