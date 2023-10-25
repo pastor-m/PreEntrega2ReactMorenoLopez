@@ -14,7 +14,7 @@ const ItemListContainer = ({mensaje}) => {
     }, [])
 
 
-    const productsComponents = products.map(prod =>{
+    const productsComponents = products.map(prod => {
         return (
             <article key={prod.id}>
                 <h1>{prod.name}</h1>
@@ -25,9 +25,13 @@ const ItemListContainer = ({mensaje}) => {
 
     console.log(productsComponents)
     return (
-        <div className='mensaje'>
-            <h1>{mensaje}</h1>
-            {productsComponents}
+        <div>
+            <div className='mensaje'>
+                <h1>{mensaje}</h1>
+            </div>
+            <div className='productos'>
+                {productsComponents}
+            </div>
         </div>
     )
 }

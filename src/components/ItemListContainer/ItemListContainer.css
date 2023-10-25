@@ -1,5 +1,11 @@
 .mensaje {
     display: flex;
     justify-content: space-evenly;
-    padding-top:  3vh;
+    padding:  3vh;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
 }
