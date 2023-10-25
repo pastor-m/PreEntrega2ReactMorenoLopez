@@ -1,13 +1,32 @@
 const products = [
     {
         id: '1',
-        name: 'Teclado 1',
+        name: 'Teclado',
         price: 1000,
-        category: 'celular',
-        img: '',
+        category: 'teclado',
+        img: 'src\assets\teclado1.webp',
         stock: 25,
-        description: 'Teclado Switches Cherry MX Red'
-    },                                                                                                                                                                                                                                                                                                                                       
+        description: 'Teclado Negro y Azul'
+    },
+    {
+        id: '2',
+        name: 'Keycaps',
+        price: '300',
+        category: 'keycap',
+        img: '',
+        stock: 10,
+        description: 'Keycaps Verdes'
+    },
+    {
+        id: '3',
+        name: 'Cable',
+        price: '100',
+        category: 'cable',
+        img: '',
+        stock: 54,
+        description: 'Cable Rosa'
+        
+    }                                                                                                                                                                                                                                                                                                                                     
 ]
 
 export const getProducts = () => {
