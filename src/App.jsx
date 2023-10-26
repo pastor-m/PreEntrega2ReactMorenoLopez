@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <ItemListContainer mensaje={'La mejor tienda de teclados'}/>
-        <ItemCount stock={10} initial={0} onAdd={(quantity) => console.log('Cantidad agregada: ', quantity)}/>
+        {/* <ItemCount stock={10} initial={0} onAdd={(quantity) => console.log('Cantidad agregada: ', quantity)}/> */}
       </BrowserRouter>
     </>
   )
