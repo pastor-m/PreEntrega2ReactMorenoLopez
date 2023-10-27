@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import { ItemCount } from './components/ItemCount/ItemCount'
 import { BrowserRouter } from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <ItemListContainer mensaje={'La mejor tienda de teclados'}/>
-        {/* <ItemCount stock={10} initial={0} onAdd={(quantity) => console.log('Cantidad agregada: ', quantity)}/> */}
+        <ItemDetailContainer/>
       </BrowserRouter>
     </>
   )
