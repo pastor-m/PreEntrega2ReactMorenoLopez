@@ -7,3 +7,12 @@
     width: 100vw;
     z-index: 1;
 }
+
+.subMenu a{
+    list-style: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 15px;
+}

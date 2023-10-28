@@ -2,27 +2,27 @@ import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
 import { getProducts } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
+import { getProductsByCategory } from '../../asyncMock'
 
 const ItemListContainer = ({mensaje}) => {
     const [products, setProducts] = useState([])
 
+    const { categoryId } = useParams()
+
     useEffect(() => {
-        getProducts()
-            .then(result => {
-                setProducts(result)
+        const asyncFunction = categoryId ? getProductsByCategory : getProducts
+
+        asyncFunction(categoryId)
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
             })
             
-    }, [])
+    }, [categoryId])
 
-
-    // const productsComponents = products.map(prod => {
-    //     return (
-    //         <article key={prod.id}>
-    //             <h1>{prod.name}</h1>
-    //             <h2>${prod.price}</h2>
-    //         </article>
-    //     )
-    // })
 
     return (
         <div>
@@ -30,7 +30,7 @@ const ItemListContainer = ({mensaje}) => {
                 <h1>{mensaje}</h1>
             </div>
             <div>
-                <ItemList products={products} />
+                <ItemList products = {products} />
             </div>
         </div>
     )
