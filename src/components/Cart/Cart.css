@@ -1,9 +1,11 @@
 .cardCart {
     display: flex;
+    width: 50%;
     flex-direction: row;
     align-items: center;
     background-color: rgb(68, 68, 68);
-    padding: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
     border-radius: 20px;
     justify-content: space-between;
   }
@@ -16,7 +18,8 @@
 .element2 {
     display: flex;
     align-items: center;
-    
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .element2 button{ 

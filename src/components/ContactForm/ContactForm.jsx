@@ -15,11 +15,16 @@ export const ContactForm = ({onCreate}) => {
             <form onSubmit={handleSubmit}>
                 <h2>Nombre</h2>
                 <input value={name} onChange={(e) => setName(e.target.value)}/>
-                <h2>Email</h2>
-                <input value={email} onChange={(e) => setEmail(e.target.value)}/>
                 <h2>Numero de telefono</h2>
                 <input value={phone} onChange={(e) => setPhone(e.target.value)}/>
-                <button>Generar orden de compra</button>
+                <h2>Email</h2>
+                <input value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <h2>Validar Email</h2>
+                <input/>
+
+                <div>
+                    <button>Generar orden de compra</button>
+                </div>
             </form>
 
 

@@ -21,19 +21,25 @@ export const Cart = () => {
     return (
         <div>
             <h1>Carrito de compra</h1>
-            <div className="cardCart">
+            <div>
                     {
                         cart.map(prod => {
                             return(
-                                <div key={prod.id} className="element">
-                                    <h3>{prod.name}</h3>
+                                <div className="cardCart">
+                                    <div key={prod.id} className="element">
+                                        <h3>{prod.name}</h3>
+                                        <h3>Cantidad:{prod.quantity}</h3>
+                                    </div>
                                 </div>
                             )
                         })
                     }
                 
                 <div className="element2">
-                    <h3>Total: ${total}</h3>
+                    <div>
+                        <h3>Cantidad Total: {totalQuantity}</h3>
+                        <h3>Total: ${total}</h3>
+                    </div>
                     <button onClick={() => clearCart() }>Limpiar el carrito</button>
                     <button onClick={() => navigate('/checkout')}>Checkout</button>
                 </div>
