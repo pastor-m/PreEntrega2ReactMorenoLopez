@@ -2,6 +2,8 @@ import './Item.css'
 import { Link } from 'react-router-dom'
 
 const Item = ({name, img, price, id}) => {
+
+    
     return(
         <div className="card">  
             <img src={img} width={250}/>

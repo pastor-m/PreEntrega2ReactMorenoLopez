@@ -29,13 +29,13 @@ const products = [
     },                                                                                                                                                                                                                                                                                                                               
 ]
 
-export const getProducts = () => {
-    return new Promise ((resolve) => {
-        setTimeout(()=> {
-            resolve(products)
-        }, 500)
-    })
-}
+// export const getProducts = () => {
+//     return new Promise ((resolve) => {
+//         setTimeout(()=> {
+//             resolve(products)
+//         }, 500)
+//     })
+// }
 
 export const getProductById = (id) => {
     return new Promise ((resolve) => {
