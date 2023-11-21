@@ -7,14 +7,14 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB9XKwb-fMVUSbQ0ikSkhCBSWiTpLsFubo",
-  authDomain: "mx-keyboards.firebaseapp.com",
-  projectId: "mx-keyboards",
-  storageBucket: "mx-keyboards.appspot.com",
-  messagingSenderId: "316167264434",
-  appId: "1:316167264434:web:cc502b50961028c13a91ab"
-};
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 
+};
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
