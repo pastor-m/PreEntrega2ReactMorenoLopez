@@ -19,7 +19,7 @@ export const getProducts = (categoryId) => {
                 resolve(productsAdapted)
             })
             .catch(error => {
-                reject(error)
+                return error
             })
     })
 }
